@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:alignContent="stretch"
+    app:alignItems="center"
+    app:flexDirection="column"
+    app:flexWrap="wrap"
+    app:justifyContent="center">
+
+    <EditText
+        android:id="@+id/user_name_text_input"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/pwd_text_input"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:onClick="signIn"
+        android:text="Sign in" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:onClick="register"
+        android:text="Register" />
+</com.google.android.flexbox.FlexboxLayout>
